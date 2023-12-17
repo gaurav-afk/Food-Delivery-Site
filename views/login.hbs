@@ -1,0 +1,19 @@
+<main>
+    <div class="login-block">
+    <h2 id="login-headline">Log In</h2>
+    {{#if errorMsg}}
+    <h5 class="errorMsg">{{errorMsg}}</h5>
+    {{/if}}
+
+    <form method="post" action="/login">
+        <input class="login-form" name="username" type="text" placeholder="Username">
+        <br>
+        <input class="login-form" name="password" type="password" placeholder="Password">
+        <br>
+        
+        <button class="login-form" id="login-register-btn" type="submit">Login</button>
+    </form>
+
+    <a class="login-form" href="./register">Create a new account</a>
+    </div>
+</main>

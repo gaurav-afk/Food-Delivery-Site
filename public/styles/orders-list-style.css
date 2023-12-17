@@ -1,0 +1,131 @@
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+  }
+
+  #forms{
+    display: flex;
+  }
+
+.ordersListForm{
+    width: 70%;
+    text-align: end;
+}
+  
+  #ordersListMain {
+    padding-top: 6%;
+  }
+  
+  #ordersListInput {
+    font-size: 15px;
+    margin-right: 10px;
+    width: 40%;
+    height: 30%;
+  }
+
+  .seeAllOrdersForm{
+    width: 25%;
+    text-align: start;
+}
+
+  #ordersListSearchBtn{
+    font-size: 15px;
+    padding: 10px;
+    margin: auto auto 5% 2%;
+    border: none;
+    border-radius: 10px;
+    background: rgb(190, 185, 185);
+  }
+
+  #ordersListSearchBtn:hover{
+    color: white;
+    background-color: rgb(37, 172, 37);
+  }
+
+  
+  #ordersListDisplayAllBtn{
+    font-size: 15px;
+    padding: 10px;
+    margin: auto auto 5% 2%;
+    border: none;
+    border-radius: 10px;
+    background: rgb(190, 185, 185);
+  }
+
+  #ordersListDisplayAllBtn:hover{
+    color: white;
+    background-color: #F99417;
+  }
+
+  
+  label {
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .assignedBtn {
+    width: fit-content;
+    font-size: 15px;
+    padding: 10px;
+    margin: auto auto 4% auto;
+    border: none;
+    border-radius: 10px;
+    background: rgba(228, 196, 157, 0.919);
+  }
+  
+  .deliveryBtn {
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    background: gray;
+    color: whitesmoke;
+  }
+  
+  .deliveryBtn:hover {
+    color: wheat;
+    background: rgb(106, 65, 7);
+  }
+
+  .order {
+    border-radius: 10px;
+    margin: 1% 1%;
+    width: 18%;
+    background-color: rgb(250, 229, 201);
+  }
+  
+  .order > img {
+    width: 100%;
+    height: 340px;
+    /* width: 15.3%; */
+  }
+
+  
+div.order > p {
+    padding: 0 10px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+
+
+  .noResult{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(210, 7, 7);
+  }
+
+  .noResult>p{
+    margin: auto;
+    font-size: 60px;
+    font-weight: 800;
+    color: wheat;
+  }

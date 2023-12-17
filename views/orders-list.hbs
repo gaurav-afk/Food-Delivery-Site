@@ -1,0 +1,58 @@
+<main id="ordersListMain">
+  <div id="forms">
+    <form action="/orders" method="post" class="ordersListForm">
+      <label for="custName">Search</label>
+      <input
+        type="text"
+        name="custName"
+        id="ordersListInput"
+        placeholder="Customer Name"
+      />
+      <button type="submit" id="ordersListSearchBtn">Submit</button>
+    </form>
+    <form action="/orders" method="get" class="seeAllOrdersForm"><button
+        type="submit"
+        id="ordersListDisplayAllBtn"
+      >Display-All</button></form>
+  </div>
+  <section>
+    {{#if isEmpty}}
+      <div class="noResult">
+        <p>No Results</p></div>
+    {{/if}}
+    {{#each orders}}
+      <div class="order">
+        {{!-- <img src="{{this.food_img}}" /> --}}
+        <p>customer name: <b>{{this.customerName}}</b></p>
+        <p>customer address: <b>{{this.deliveryAddress}}</b></p>
+        <p>date of order: <b>{{this.dateTime}}</b></p>
+        <p>items ordered: 
+          {{#each this.itemsOrdered}}
+          <b>{{this.name}}, </b>
+          {{/each}}
+          </p>
+        <p>number of order: <b>{{this.itemsOrdered.length}}</b></p>
+        <p>order total: <b>${{this.totalAmount}}</b></p>
+        {{#if this.isAssigned}}
+        <p>driver name: <b>{{this.selectedByDriver}}</b></p>
+        <p>drivers license: <b>{{this.driverLicensePlate}}</b></p>
+        <div class="assignedBtn">
+            {{this.status}}
+          </div>
+          
+        {{else}}
+        <p>driver name: <b>n/a</b></b></p>
+        <p>drivers license: <b>n/a</b></p>
+          <form action="/orders/assign" method="post"><button
+              type="submit"
+              class="deliveryBtn"
+              value={{this._id}}
+              name="updateBtn"
+            >
+              Assign for delivery
+            </button></form>
+        {{/if}}
+      </div>
+    {{/each}}
+  </section>
+</main>

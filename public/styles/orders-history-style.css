@@ -1,0 +1,21 @@
+#orderTable {
+  margin-bottom: 25%;
+  width: 100%;
+  background-color: rgb(250, 229, 201);
+  justify-content: space-around;
+}
+
+#tableHead{
+  font-size: 18px;
+}
+
+.tableData{
+  background-color: rgb(238, 205, 163);
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  object-fit: cover;
+  margin-left: auto; /* Align the image to the right */
+}

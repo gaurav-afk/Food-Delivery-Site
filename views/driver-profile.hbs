@@ -1,0 +1,29 @@
+<main>
+    <div class="driver-profile">
+        <h2 class="header">Driver Profile</h2>
+
+        <div class="driver-info">
+            <p class="profile-item" id="username">Username: {{driver.username}}</p>
+            <p class="profile-item" id="fullName">Full Name: {{driver.fullName}}</p>
+
+            <div class="password-section">
+                <label for="password">Password:  </label>
+                <p class="profile-item" id="password">  ******  </p>
+                <button type="button" id="showPasswordBtn">Show Password</button>
+            </div>
+            <p class="profile-item" id="vehicleModel">Vehicle Model: {{driver.vehicleModel}}</p>
+            <p class="profile-item" id="color">Color: {{driver.color}}</p>
+            <p class="profile-item" id="licensePlate">License Plate: {{driver.licensePlate}}</p>
+            <p class="profile-item bold">If you want to change your driver information, please contact our restaurant manager!</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle toggling show/hide password
+        document.getElementById("showPasswordBtn").addEventListener("click", function () {
+            // Toggle display of the password
+            const passwordSpan = document.getElementById("password");
+            passwordSpan.textContent = passwordSpan.textContent === "******" ? "{{driver.password}}" : "******";
+        });
+    </script>
+</main>

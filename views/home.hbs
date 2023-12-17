@@ -1,0 +1,28 @@
+<div class="main-banner">
+    <div class="restaruant_name">
+        <h1>{{ restaurantInfo.name }}</h1>
+    </div>
+
+    {{!-- <img class="main-banner" src="{{ restaurantInfo.banner }}" alt="Featured Item"> --}}
+
+</div>
+<div class="menuinfo">
+    <div class="menushours">
+        <h3>
+            To order take-out or <br> delivery, call 416-282-5757!<br>
+        </h3>
+        <p></p>
+        Delivery starts at 12PM<br>
+
+        <p>Location:<br> {{ restaurantInfo.location }}</p>
+        <p>Hours:<br> {{ restaurantInfo.hours }}</p>
+
+    </div>
+    <div class="menu">
+        <h3>
+            <a href="/menus">View Menu</a>
+        </h3>
+
+    </div>
+
+</div>

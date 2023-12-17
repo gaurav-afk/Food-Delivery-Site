@@ -1,0 +1,18 @@
+<main>
+    <h2 class="header">Delivery History</h2>
+    {{#if orders.length}}
+        {{#each orders}}
+            <div class="order-history-item">
+                <p>Order ID: {{this._id}}</p>
+                <p>Customer: {{this.customerName}}</p>
+                <p>Delivery Address: {{this.deliveryAddress}}</p>
+                <p>Delivery Date: {{deliveryDate}}</p>
+                <p>Delivery Time: {{deliveryTime}}</p>
+                <p>Delivery Status: {{status}}</p>
+                <img src="{{this.deliveryPhoto}}" alt="Delivery Photo">
+            </div>
+        {{/each}}
+    {{else}}
+        <p class="no-order">No delivery history available</p>
+    {{/if}}
+</main>

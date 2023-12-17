@@ -1,0 +1,25 @@
+<div class="checkout">
+    <h2 class="header">Checkout</h2>
+    <h2>Your Order Summary:</h2>
+    <ul style="padding-right: 30px;">
+        {{#each cartItems}}
+        <li style="list-style: none;">
+            <h3 style="display:inline; padding:12px">{{this.name}}</h3>
+            <p style="display:inline; padding:12px">Price: ${{this.price}}</p>
+        </li>
+        {{/each}}
+    </ul>
+    <p>Total: ${{totalPrice}}</p>
+    <!-- Add a form for capturing customer details and payment information -->
+    <form method="POST" action="/processOrder">
+        <label style="margin: 12px;" for="name">Enter Your Name:</label><br>
+        <input style="margin: 12px;" type="text" id="name" name="name" required><br>
+        {{!-- <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br> --}}
+        <label style="margin: 12px;" for="address">Enter Your Delivery Address:</label><br>
+        <textarea style="margin: 12px;" id="address" name="address" required></textarea><br>
+        <!-- Add more fields for payment information (e.g., credit card) as needed -->
+        <input class="addtocart" style="margin: 12px;" type="submit" value="Place Order">
+    </form>
+
+</div>

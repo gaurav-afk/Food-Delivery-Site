@@ -1,0 +1,25 @@
+<div class="main">
+    <h2 class="header">Our Menu</h2>
+    {{#each menuItems}}
+    <div class="responsive">
+        <div class="gallery">
+            <img src="{{this.image}}" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">
+                <lable class="nameLable"> {{this.name}}</lable>
+                <lable class="priceLable"> Price: ${{this.price}} </lable> <br>
+                <p class="desc">
+                    {{this.description}}
+                </p>
+
+            </div>
+            <div class="buttoncart">
+                <form method="POST" action="/addToCart">
+                    <input type="hidden" name="menuItemId" value="{{this._id}}">
+                    <input class="addtocart" type="submit" value="Add to Cart">
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

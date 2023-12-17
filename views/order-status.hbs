@@ -1,0 +1,14 @@
+<h2 class="header">Check Order Status</h2>
+<div class="orderstatus">
+
+    <form method="POST" action="/checkOrderStatus">
+        <label for="orderCoNum">Enter Your Order Confirmation Number:</label>
+        <input type="text" id="orderID" name="orderCoNum" required><br><br><br>
+        <input class="addtocart" type="submit" value="Check Status">
+    </form>
+    {{#each confirmationNumber}}
+    <h2>
+        Order Status: {{this.status}}
+    </h2>
+    {{/each}}
+</div>

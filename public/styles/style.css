@@ -1,0 +1,329 @@
+/* styles.css */
+body {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding-top: 15vh;
+}
+
+#nav {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  position: fixed;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(175, 173, 173);
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 22px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navLink:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.main {
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.no-order {
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  background-color: #053b50;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  color: black !important;
+}
+
+.header {
+  color: rgb(0, 0, 0) !important;
+}
+
+/* a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: medium;
+    width: 30px !important;
+}
+
+a:hover {
+    background-color: #64CCC5;
+    color: #176B87;
+} */
+
+/* Login and Register Page Styling */
+.errorMsg {
+  color: red;
+}
+
+/* home page css */
+.main-banner {
+  background-image: url("https://static.wixstatic.com/media/dce932_a39073d8085544d0ab525c534fbfb7c5.jpg/v1/fill/w_980,h_579,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/dce932_a39073d8085544d0ab525c534fbfb7c5.jpg");
+  height: 93vh;
+  background-size: cover;
+  padding-top: 0px !important;
+}
+
+.restaruant_name {
+  text-align: center;
+  position: static;
+  padding-top: 30vh;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.restaruant_name h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+  padding-top: 21px;
+  color: #383838 !important;
+  font-family: Lobster !important;
+}
+
+.menuinfo {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  height: 66vh;
+  width: 48vw;
+  background-image: url("https://static.wixstatic.com/media/dce932_507916e96ad84fed857b8333a1056f47~mv2.jpg/v1/fill/w_735,h_696,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/19325725_edited.jpg");
+  background-size: cover;
+  opacity: 0.7;
+  float: right;
+}
+
+.menu h3 {
+  text-align: center;
+  margin-top: 30vh;
+}
+
+.menu h3 a {
+  color: black !important;
+  font-size: xx-large;
+}
+
+.menushours {
+  width: 50.7vw;
+  height: 66vh;
+  float: right;
+  text-align: center;
+  background-color: white;
+  font-size: larger;
+  padding-top: 66px;
+  color: black !important;
+}
+
+footer {
+  margin-top: 5%;
+  width: 100%;
+  background-color: #053b50;
+  height: 20%;
+}
+
+/*   
+  footer > p {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: beige;
+  }
+  
+
+  footer h4{
+    margin: 0px !important; *
+     padding-top: 21px;
+  } */
+/* menu page css */
+div.gallery {
+  background-color: rgb(250, 229, 201);
+  border: 1px solid none;
+}
+
+div.gallery:hover {
+  border: 1px solid #000000;
+  opacity: 3;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 48%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33%;
+  height: 120%;
+}
+
+.nameLable {
+  float: left;
+}
+
+.priceLable {
+  float: right;
+}
+
+.desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttoncart {
+  text-align: center;
+}
+
+.addtocart {
+  background-color: #000000;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 21px;
+  padding-right: 21px;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-size: medium;
+}
+
+.addtocart:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 21px;
+  padding-right: 21px;
+  border: 1px solid rgb(189, 189, 189);
+  cursor: pointer;
+}
+
+/* cart css */
+.emptycart {
+  color: Red;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: (250, 229, 201);
+}
+
+.cartitems {
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: rgb(250, 229, 201) 1px solid;
+  padding: 21px;
+  background-color: rgb(250, 229, 201);
+}
+
+.cartlist ul {
+  list-style: none;
+  background-color: rgb(250, 229, 201);
+  padding: 30px;
+  color: black;
+}
+
+.removeitembutton {
+  background-color: none;
+}
+
+.checkout a {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 13px 10px;
+  transition: background-color 0.3s;
+  font-size: medium;
+  height: 43px;
+}
+
+.checkout a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* order status page */
+.orderstatus {
+  text-align: center;
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: rgb(250, 229, 201) 1px solid;
+  padding: 21px;
+  background-color: rgb(250, 229, 201);
+}
+
+/* checkout page */
+.checkout {
+  text-align: center;
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: rgb(250, 229, 201) 1px solid;
+  padding: 21px;
+  background-color: rgb(250, 229, 201);
+}
+
+/* order confirmation page */
+.orderconf {
+  text-align: center;
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: rgb(250, 229, 201) 1px solid;
+  padding: 21px;
+  background-color: rgb(250, 229, 201);
+}

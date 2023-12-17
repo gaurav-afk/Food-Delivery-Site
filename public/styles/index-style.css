@@ -1,0 +1,28 @@
+  #foodCards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .topFoodCard {
+    width: 18%;
+    background-color: rgb(250, 229, 201);
+    overflow-wrap: break-word;
+  }
+  
+  .topFoodCard > p {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+  }
+  
+  #topHeading {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .topFoodImg {
+    height: 340px;
+    width: 100%;
+  }
+  

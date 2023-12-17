@@ -1,0 +1,36 @@
+<main>
+  <h2 class="header">List of Open Deliveries</h2>
+  <div class="order-list">
+    {{#if orders.length}}
+      {{#each orders as |order|}}
+        <div class="order-item">
+          <p>Order ID: {{order._id}}</p>
+          <p>Customer Name: {{order.customerName}}</p>
+          <p>Delivery Address: {{order.deliveryAddress}}</p>
+          <p>Items Ordered:</p>
+          <ul>
+            {{#each order.itemsOrdered}}
+              <li>{{this.name}} - ${{this.price}}</li>
+              <br>
+            {{/each}}
+          </ul>
+          <p>Order Date and Time: {{order.dateTime}}</p>
+          <p>Status: {{order.status}}</p>
+
+          {{#if (eq order.status "READY FOR DELIVERY")}}
+            {{#if (eq order.selectedByDriver "n/a")}}
+              <form method="post" action="/select-order/{{order._id}}">
+                <button type="submit">Select This Order</button>
+              </form>
+
+            {{else}}
+              <p>This order has been selected by a driver.</p>
+            {{/if}}
+          {{/if}}
+        </div>
+      {{/each}}
+    {{else}}
+      <p class="no-order">No orders at the moment</p>
+    {{/if}}
+  </div>
+</main>

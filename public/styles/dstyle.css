@@ -1,0 +1,385 @@
+/* styles.css */
+body {
+    background-color: #053B50;
+    color: #EEEEEE;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding-top: 18vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+.no-order {
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #64CCC5;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    color: aqua;
+}
+
+a {
+    color: #64CCC5;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #64CCC5;
+    color: #176B87;
+}
+
+/* Login and Register Page Styling */
+.errorMsg {
+    color: red;
+}
+
+.login-block {
+    background-color: #7D7C7C;
+    border: 1px solid #7D7C7C;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 35%;
+    margin-left: 32.5%;
+    margin-top: 8%;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-form {
+    margin-bottom: 20px;
+}
+
+#login-headline {
+    margin-bottom: 40px;
+}
+
+.register-block {
+    background-color: #7D7C7C;
+    border: 1px solid #7D7C7C;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 35%;
+    margin-left: 32.5%;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-register-btn {
+    background-color: #176B87;
+    color: #EEEEEE;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#login-register-btn:hover {
+    background-color: #053B50;
+}
+
+/* Dashboard Page Styling */
+.dasboard-block {
+    background-color: #7D7C7C;
+    border: 1px solid #7D7C7C;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-section {
+    display: inline-block;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #176B87;
+    background-color: #176B87;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 10rem;
+    box-sizing: border-box;
+}
+
+.dashboard-section:hover {
+    background-color: #419197;
+}
+
+.dashboard-line {
+    margin-bottom: 20px;
+}
+
+.dashboard-section h3 {
+    color: #78D6C6;
+}
+
+.dashboard-section p {
+    color: #EEEEEE;
+}
+
+.dashboard-btn {
+    background-color: #04364A;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard-btn:hover {
+    background-color: #053B50;
+}
+
+/* List of Open Deliveries Page Styling */
+/* styles_orders.css */
+
+body {
+    background-color: #053B50;
+    color: #EEEEEE;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding-top: 18vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #176B87;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+a {
+    color: #64CCC5;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #64CCC5;
+    color: #176B87;
+}
+
+/* List of Open Deliveries Page Styling */
+.order-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.order-item {
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #7D7C7C;
+    background-color: #7D7C7C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item:hover {
+    background-color: #419197;
+}
+
+.order-item p {
+    color: #EEEEEE;
+}
+
+.order-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-item li {
+    color: #78D6C6;
+}
+
+.order-item button {
+    background-color: #176B87;
+    color: #EEEEEE;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.order-item button:hover {
+    background-color: #053B50;
+}
+
+/* Delivery Fulfillment Page Styling */
+.fulfilment {
+    text-align: left;
+}
+
+.order-details {
+    border: 1px solid #7D7C7C;
+    background-color: #7D7C7C;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.order-details:hover {
+    background-color: #419197;
+}
+
+.order-details .left,
+.order-details .middle,
+.order-details .right,
+.order-details .bottom {
+    width: 42%;
+}
+
+.order-details .middle {
+    text-align: right;
+    margin-right: 54px;
+}
+
+.order-details p {
+    color: #EEEEEE;
+    margin: 5px 0;
+}
+
+.order-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-details li {
+    color: #78D6C6;
+}
+
+.order-details .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.fulfillment-btn {
+    background-color: #176B87;
+    color: #EEEEEE;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.fulfillment-btn:hover {
+    background-color: #053B50;
+}
+
+/* Delivery History Page Styling */
+.order-history-item {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row; /* Set the direction to row for side-by-side alignment */
+    align-items: center;
+    width: 99%; /* Adjust the width as needed */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #7D7C7C;
+    background-color: #7D7C7C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-history-item:hover {
+    background-color: #419197;
+}
+
+.order-history-item p {
+    color: #EEEEEE;
+    margin: 5px 10px; /* Adjust the margin as needed */
+}
+
+.order-history-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: auto; /* Align the image to the right */
+}
+
+/* Driver Profile Page Styling */
+.driver-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.driver-info {
+    background-color: #7D7C7C;
+    border: 1px solid #7D7C7C;
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 30px; /* Increased padding */
+    margin-top: 20px;
+}
+
+.profile-item {
+    color: #EEEEEE;
+    margin: 15px 0; /* Increased margin */
+}
+
+.profile-item.bold {
+    font-weight: bold;
+    color: yellow;
+}
+
+.password-section {
+    display: flex;
+    align-items: center;
+}
+
+#showPasswordBtn {
+    background-color: #176B87;
+    color: #EEEEEE;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#showPasswordBtn:hover {
+    background-color: #053B50;
+}

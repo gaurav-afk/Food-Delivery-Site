@@ -1,0 +1,34 @@
+<main>
+    <div class="register-block">
+    <h2>Driver Registration</h2>
+
+    {{#if errorMsg}}
+        <p class="errorMsg">{{errorMsg}}</p>
+    {{/if}}
+
+    <form class="login-form" method="post" action="/register">
+        <p>Username:</p>
+        <input name="username" type="text" placeholder="Username" required>
+        <br>
+        <p>Password:</p>
+        <input name="password" type="password" placeholder="Password" required>
+        <br>
+        <p>Full Name:</p>
+        <input name="fullName" type="text" placeholder="Full Name" required>
+        <br>
+        <p>Vehicle Model:</p>
+        <input name="vehicleModel" type="text" placeholder="Vehicle Model" required>
+        <br>
+        <p>Color:</p>
+        <input name="color" type="text" placeholder="Color" required>
+        <br>
+        <p>License Plate:</p>
+        <input name="licensePlate" type="text" placeholder="License Plate" required>
+        <br>
+        <br>
+        <button id="login-register-btn" type="submit">Submit</button>
+    </form>
+    <a href="/delivery">Back to login</a>
+    </div>
+</main>
+

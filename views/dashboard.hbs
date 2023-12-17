@@ -1,0 +1,32 @@
+<main>
+  <h2 class="header">Welcome to Your Dashboard, {{driver.fullName}}!</h2>
+  <div class="dasboard-block">
+  <!-- Div 1: Available Orders -->
+  <div class="dashboard-section">
+    <h3 class="dashboard-line">Available Orders</h3>
+    <p class="dashboard-line">Number of Open Deliveries: {{availableOrders.length}}</p>
+    <a href="/list-of-orders" class="dashboard-btn dashboard-line">View Available Orders</a>
+  </div>
+
+  <!-- Div 2: Pending Orders -->
+  <div class="dashboard-section">
+    <h3 class="dashboard-line">Pending Orders</h3>
+    <p class="dashboard-line"> Number of Orders Pending Delivery: {{pendingOrders.length}}</p>
+    <a href="/delivery-fulfillment-page" class="dashboard-btn">View Accepted Orders</a>
+  </div>
+
+  <!-- Div 3: Completed Orders -->
+  <div class="dashboard-section">
+    <h3 class="dashboard-line">Completed Orders</h3>
+    <p class="dashboard-line">Number of Completed Deliveries: {{completedOrders.length}}</p>
+    <a href="/delivery-history" class="dashboard-btn dashboard-line">View Delivery History</a>
+  </div>
+
+  <!-- Div 4: Vehicle Information -->
+  <div class="dashboard-section">
+    <h3 class="dashboard-line">Driver Profile</h3>
+    <p class="dashboard-line">Click the below button to view your profile</p>
+    <a href="/driver-profile" class="dashboard-btn dashboard-line">View Profile</a>
+  </div>
+  </div>
+</main>

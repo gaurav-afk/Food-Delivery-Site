@@ -1,0 +1,38 @@
+<main>
+  <br />
+  <br />
+  <br/>
+  <br />
+  
+  <table id="orderTable">
+    <tr id="tableHead">
+      <th>customer</th> 
+      <th>date</th>
+      <th>item</th>
+      <th>no. of item</th>
+      <th>total price</th>
+      <th>driver</th>
+      <th>license plate</th>
+      <th>status</th>
+      <th>image</th>
+    </tr>
+    {{#each orders}}
+    <tr class="tableData">
+      <td><b>{{this.customerName}}</b></td> 
+      <td>{{this.dateTime}}</td>
+      <td>
+      {{#each this.itemsOrdered}}
+          {{this.name}},
+      {{/each}}
+       </td>
+      <td>{{this.itemsOrdered.length}}</td>
+      <td>${{this.totalAmount}}</td>
+      <td>{{this.selectedByDriver}}</td>
+      <td>{{this.driverLicensePlate}}</td>
+      <td>{{this.status}}</td>
+      <td> <img src="{{this.deliveryPhoto}}" alt="Delivery Photo"></td>
+    </tr>
+    {{/each}}
+  </table>
+
+</main>

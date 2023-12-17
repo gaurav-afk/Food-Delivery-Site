@@ -1,0 +1,38 @@
+<main class="fulfilment">
+  <h2 class="header">Delivery Fulfillment</h2>
+
+  {{#if orders.length}}
+    {{#each orders as |order|}}
+      <div class="order-details">
+        <div class="left">
+        <p>Order ID: {{order._id}}</p>
+        <p>Customer Name: {{order.customerName}}</p>
+        <p>Delivery Address: {{order.deliveryAddress}}</p>
+        </div>
+        <div class="middle">
+        <p>Items Ordered:</p>
+        <ul>
+          {{#each order.itemsOrdered}}
+            <li class="fulfillment-order">{{this.name}} - ${{this.price}}</li>
+          {{/each}}
+        </ul>
+        </div>
+        <div class="right">
+        <p>Order Date and Time: {{order.dateTime}}</p>
+        <p>Status: {{order.status}}</p>
+        </div>
+        <div class="bottom">
+        {{#if (eq order.status "IN TRANSIT")}}
+          <form method="post" action="/complete-delivery/{{order._id}}" enctype="multipart/form-data">
+            <label for="deliveryPhoto">Select Delivery Photo:</label>
+            <input type="file" id="deliveryPhoto" name="deliveryPhoto" accept="image/*" required />
+            <button class="fulfillment-btn" type="submit">Complete Delivery</button>
+          </form>
+        {{/if}}
+        </div>
+      </div>
+    {{/each}}
+  {{else}}
+    <p class="no-order">No order details available</p>
+  {{/if}}
+</main>
