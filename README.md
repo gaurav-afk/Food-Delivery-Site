@@ -15,8 +15,8 @@
 
 
 #Food delivery website
-<img width="1470" alt="Screenshot 2023-12-16 at 11 04 49 PM" src="https://github.com/gaurav-afk/Food-Delivery-Site/assets/65609530/994744ae-7081-410e-a59c-e58a19dc97a7">
 <img width="1470" alt="Screenshot 2023-12-16 at 11 05 05 PM" src="https://github.com/gaurav-afk/Food-Delivery-Site/assets/65609530/7e06f427-c972-44ce-8d01-63f4f8cab277">
+<img width="1470" alt="Screenshot 2023-12-16 at 11 04 49 PM" src="https://github.com/gaurav-afk/Food-Delivery-Site/assets/65609530/994744ae-7081-410e-a59c-e58a19dc97a7">
 <img width="1470" alt="Screenshot 2023-12-16 at 11 05 54 PM" src="https://github.com/gaurav-afk/Food-Delivery-Site/assets/65609530/2217afc4-f70e-4064-8842-187f004adaec">
 <img width="1470" alt="Screenshot 2023-12-16 at 11 05 39 PM" src="https://github.com/gaurav-afk/Food-Delivery-Site/assets/65609530/093555a9-fd34-45e2-9c40-6ab32858c71b">
 <img width="1470" alt="Screenshot 2023-12-16 at 11 05 32 PM" src="https://github.com/gaurav-afk/Food-Delivery-Site/assets/65609530/581c3a60-4928-40ec-9947-ba5d0c2caf63">
